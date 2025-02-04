@@ -46,12 +46,12 @@ for destn in sheet_data:
     if not cheapest_flight.price == 'N/A':
         if float(destn['lowestPrice']) > cheapest_flight.price:
             if cheapest_flight.stops == 0:
-                message = (f"Only £ {cheapest_flight.price} to fly  direct from {cheapest_flight.origin_airport} "
+                message = (f"Only GBP {cheapest_flight.price} to fly  direct from {cheapest_flight.origin_airport} "
                            f" to {cheapest_flight.departure_airport}, on {cheapest_flight.out_date} "
                            f"with {cheapest_flight.stops} stop(s) "
                            f"until {cheapest_flight.return_date}.")
             else:
-                message = (f"Only £ {cheapest_flight.price} to fly   from {cheapest_flight.origin_airport} "
+                message = (f"Only GBP {cheapest_flight.price} to fly   from {cheapest_flight.origin_airport} "
                            f" to {cheapest_flight.departure_airport}, on {cheapest_flight.out_date} "
                            f"with {cheapest_flight.stops} stop(s) "
                            f"departing on  {cheapest_flight.out_date} and returning on {cheapest_flight.return_date}.")
